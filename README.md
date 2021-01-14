@@ -1,4 +1,4 @@
-# GBS gene expression analysis pipeline
+# GBS gene expression analysis pipeline (RNA-Seq)
 Gene expression analysis of peripheral blood cells (PBMC) of Guillian-Barré Syndrome Patients.
 ## Pipeline steps
 ## Linux environment
@@ -25,6 +25,15 @@ Gene expression analysis of peripheral blood cells (PBMC) of Guillian-Barré Syn
   * FeatureCounts v.0.11.9
 ## R environment
 ### R packages descriptions
+* [biomaRt](https://bioconductor.org/packages/release/bioc/html/biomaRt.html): Provide access to a diverse set of data and enables a wide range of powerful online queries from gene annotation to database mining.
 * [clusterProfiler](https://bioconductor.org/packages/release/bioc/html/clusterProfiler.html) : This package implements methods to analyze and visualize functional profiles (GO and KEGG) of gene and gene clusters.
 * [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html): Estimate variance-mean dependence in count data from high-throughput sequencing assays and test for differential expression based on a model using the negative binomial distribution.
+* [org.Hs.eg.db](https://bioconductor.org/packages/release/data/annotation/html/org.Hs.eg.db.html): Genome wide annotation for Human, primarily based on mapping using Entrez Gene identifiers.
+* [pheatmap](https://www.rdocumentation.org/packages/pheatmap/versions/1.0.12/topics/pheatmap): A function to draw clustered heatmaps where one has better control over some graphical parameters such as cell size, etc.
+* [genefilter](https://bioconductor.org/packages/release/bioc/html/genefilter.html): Methods for filtering genes from high-throughput experiments.
 * [ggplot2](https://github.com/tidyverse/ggplot2): A system for declaratively creating graphics, based on The Grammar of Graphics.
+* [RColorBrewer](https://www.rdocumentation.org/packages/RColorBrewer/versions/1.1-2/topics/RColorBrewer): Creates nice looking color palettes especially for thematic maps.
+
+### 8. Load, check and preprocess the count mapped dataframe
+### 9. Differential Gene Expression
+* DESeq2
