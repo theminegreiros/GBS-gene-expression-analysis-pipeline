@@ -37,3 +37,13 @@ Gene expression analysis of peripheral blood cells (PBMC) of Guillian-Barré Syn
 ### 8. Load, check and preprocess the count mapped dataframe
 ### 9. Differential Gene Expression
 * DESeq2
+### 10. Convert gene name to symbol and entrez/filter genes
+* biomaRt
+* genefilter
+### 11. GO and KEGG pathway enrichment analysis
+* clusterProfiler
+* org.Hs.eg.db
+### 12. Plotting
+* pheatmap
+* ggplot2
+* RColorBrewer
